@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block title %}Student Already Exists{% endblock %}
+{% block content %}
+    <p>Student already exists. Please use different Roll Number!</p>
+    <a href="{{ url_for('home') }}">Go Home</a>
+{% endblock %}

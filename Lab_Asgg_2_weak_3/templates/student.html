@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Student Details
+    </title>
+</head>
+
+<body>
+    <h1>Student Details</h1>
+
+    <table border="2" cellspacing="0" cellpadding="4">
+
+        <tr>
+
+            <th>STUDENT ID</th>
+            <th>Course ID</th>
+            <th>Marks</th>
+
+        </tr>
+
+        {% for row in student_rows %}
+
+        <tr>
+
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+
+        </tr>
+
+        {% endfor %}
+
+        <tr>
+        <tr>
+            <td></td>
+            <td>Total Marks</td>
+            <td>{{ total }}</td>
+        </tr>
+        </tr>
+    </table>
+</body>
+
+</html>
